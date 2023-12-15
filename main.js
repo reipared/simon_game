@@ -1,14 +1,18 @@
-// Arrays
+// Arrays to store game state
 let sequence = [];
 let humanSequence = [];
 let level = 0;
 
-// Variables
+// DOM elements
 const startButton = document.querySelector(".js-start");
 const info = document.querySelector(".js-info");
 const heading = document.querySelector(".js-heading");
 const tileContainer = document.querySelector(".js-container");
 
+/**
+ * Resets the game state and displays an alert with the given text.
+ * @param {string} text - The text to display in the alert.
+ */
 function resetGame(text) {
 	alert(text);
 	sequence = [];
